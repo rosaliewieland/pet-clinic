@@ -21,6 +21,7 @@ jobs:
       run: |
         #### AUFGABE COMPILE, DOCKER BUILD UND PUSH
           # hier ist Platz für maven package und docker build
+          #nochmal
           mvn package
           docker build  --tag ghcr.io/rosaliewieland/pet-clinic:latest -f Dockerfile .
           docker login -u reissij -p $GITHUB_ACCESSTOKEN ghcr.io
