@@ -24,7 +24,7 @@ jobs:
           #nochmal
           mvn package
           docker build  --tag ghcr.io/rosaliewieland/pet-clinic:latest -f Dockerfile .
-          docker login -u reissij -p $GITHUB_ACCESSTOKEN ghcr.io
+          docker login -u rosaliewieland -p $GITHUB_ACCESSTOKEN ghcr.io
           docker push ghcr.io/rosaliewieland/pet-clinic:latest  
           
 
